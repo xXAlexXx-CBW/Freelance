@@ -1,0 +1,309 @@
+h1 {
+    font-family: Nixmat;
+    font-variant: small-caps;
+    font-weight: 50;
+    font-size: 100px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 4px 3px 79px #E1E1E1;
+    
+}
+
+#banner {
+    background-color: #000000;
+    text-align: center;
+}
+
+#nav {
+    background-color: #000000;
+}
+
+#footer {
+    background-color: #000000;
+    height: 100px;
+}
+
+#main {
+    background-color: #ffffff;
+    min-height:200px;
+}
+
+body {
+    background-color: #000000;
+}
+
+#nav {
+    width: 800px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 340px;
+    
+}
+
+nav:before {
+    
+content:'';
+    display: block;
+    height:50px;
+    width:100%;
+    background-color: #000000;
+    position: absolute;
+    left:0;
+    z-index:-1;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    height:50px;
+}
+
+ul li {
+    float: left;
+    
+}
+
+ul li a {
+    color:#fff;
+    display: block;
+    height: 50px;
+    padding:0 40px;
+    text-transform: uppercase ;
+    text-decoration:none;
+    line-height: 50px;
+}
+ul li a:hover {
+    background-color:#777777;
+}
+
+h2 {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 4px 3px 93px #000000;
+}
+h3 {
+    font-family: Nixmat;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 6px 123px #000000;
+}
+p {
+    color: #000000;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-variant: small-caps;
+    font-weight: 500;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 6px 5px 93px #000000;
+}
+
+a {
+    color: #FFFFFF;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-variant: small-caps;
+    font-weight: 100;
+    font-size: small;
+    text-decoration: none;
+    
+}
+
+#examples1 {
+        text-align: center;
+}
+
+* {
+   box-sizing: border-box;
+}
+body {
+   background: #000000;
+}
+.decor {
+   position: relative;
+   max-width: 400px;
+   margin: 50px auto 0;
+   background: white;
+   border-radius: 30px;
+}
+.form-left-decoration, .form-right-decoration {
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 20px;
+   background: #000000;
+   border-radius: 20px;
+}
+.form-left-decoration {
+   bottom: 60px;
+   left: -30px;
+}
+.form-right-decoration {
+   top: 60px;
+   right: -30px;
+}
+.form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 20px;
+   border-radius: 30px;
+   background: white;
+}
+.form-left-decoration:before {
+   top: -20px;
+}
+.form-left-decoration:after {
+   top: 20px;
+   left: 10px;
+}
+.form-right-decoration:before {
+   top: -20px;
+   right: 0;
+}
+.form-right-decoration:after {
+   top: 20px;
+   right: 10px;
+}
+.circle {
+   position: absolute;
+   bottom: 80px;
+   left: -55px;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: white;
+}
+.form-inner {
+   padding: 50px;
+}
+.form-inner input, .form-inner textarea {
+   display: block;
+   width: 100%;
+   padding: 0 20px;
+   margin-bottom: 10px;
+   background: #E9EFF6;
+   line-height: 40px;
+   border-width: 0;
+   border-radius: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+   margin-top: 30px;
+   background: #000000;
+   border-bottom: 4px solid #777777;
+   color: white;
+   font-size: 14px;
+}
+.form-inner textarea {
+   resize: none;
+}
+.form-inner h3 {
+   margin-top: 0;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   font-size: 24px;
+   color: #707981;
+}
+
+
+/*pricing*/
+
+
+.pricingdiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.pricingdiv ul.theplan{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: black;
+  background: #000000;
+  position: relative;
+  width: 250px; /* width of each table */
+  margin-right: 10px; /* spacing between tables */
+  margin-bottom: 1em;
+  transition: all .5s;
+}
+
+.pricingdiv ul.theplan:hover{ /* when mouse hover over pricing table */
+  transform: scale(1.05);
+  transition: all .5s;
+  z-index: 100;
+  box-shadow: 0 0 10px gray;
+}
+
+.pricingdiv ul.theplan li{
+  margin: 10px 20px;
+  position: relative;
+}
+
+.pricingdiv ul.theplan li.title{
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  border-bottom: 5px solid white;
+}
+
+.pricingdiv ul.theplan:nth-of-type(2){
+  background: #000000;
+}
+    
+.pricingdiv ul.theplan:nth-of-type(3){
+  background: #000000;
+}
+
+.pricingdiv ul.theplan:last-of-type{ /* remove right margin in very last table */
+  margin-right: 0;
+}
+
+/*very last LI within each pricing UL */
+.pricingdiv ul.theplan li:last-of-type{
+  text-align: center;
+  margin-top: auto; /*align last LI (price botton li) to the very bottom of UL */
+}  
+
+.pricingdiv a.pricebutton{
+  background: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px auto;
+  border-radius: 5px;
+  color: navy;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 500px) {
+  .pricingdiv ul.theplan{
+    border-radius: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .pricingdiv ul.theplan:hover{
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .pricingdiv a.pricebutton{
+    display: block;
+  }
+}
+
